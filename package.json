@@ -1,0 +1,39 @@
+{
+  "name": "smallerSites",
+  "description": "Drag and drop website designer for web developers and designers",
+  "version": "0.0.1",
+  "author": "Sibongumusa Lungelo",
+  "license": "Apache-2.0",
+  "main": "libs/builder/builder.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/S-codes14/smaller.git"
+  },
+  "dependencies": {
+    "jquery": "^3.0"
+  },
+  "keywords": [
+    "smallerSites",
+    "drag-drop",
+    "drag&drop",
+    "drag",
+    "drop",
+    "wysiwyg",
+    "web",
+    "template",
+    "editor",
+    "site",
+    "builder",
+    "designer"
+  ],
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-format-html": "^1.2.5",
+    "gulp-sass": "^4.1.0"
+  }
+}

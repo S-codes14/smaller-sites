@@ -1,0 +1,61 @@
+<!DOCTYPE>
+<html>
+<head>
+    <style> /* Style inputs with type="text", select elements and textareas */
+        input[type=text], select, textarea {
+          width: 100%; /* Full width */
+          padding: 12px; /* Some padding */ 
+          border: 1px solid #ccc; /* Gray border */
+          border-radius: 4px; /* Rounded borders */
+          box-sizing: border-box; /* Make sure that padding and width stays in place */
+          margin-top: 6px; /* Add a top margin */
+          margin-bottom: 16px; /* Bottom margin */
+          resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+        
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+          background-color: #4CAF50;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        /* Add a background color and some padding around the form */
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        } </style>
+<meta charset="utf-8">
+<title>Contact Form</title>
+</head>
+<body>
+
+<div class="container">
+    <form method="post" action="contact.php">
+        <!-- <label for="name">Name:</label> -->
+        <input type="text" class="text" name="cf_name" id="name" placeholder="name: What is your name"/>
+        <!-- <label for="email">email:</label> -->
+        <input type="text" class="text" name="cf_email" id="email" placeholder="email: What is you email adress"/>
+        <!-- <label for="text">Message:</label> -->
+        <textarea class="text" name="cf_message" id="message" placeholder="message: What do you want to say to this guy who made this"></textarea>
+        <input type="submit" class="submit" value="Send" />
+    </form>
+
+<br/> <br/> <br/>
+    		<footer> This website was made with love by <a href="https://s-lungelo.netlify.app"> Sibongumusa Lungelo </a> </footer>
+
+</div>
+
+
+
+</body>
+</html>
