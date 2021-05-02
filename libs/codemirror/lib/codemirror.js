@@ -946,7 +946,11 @@ function getBidiPartAt(order, ch, sticky) {
 // % (ET):  European Number Terminator
 // n (AN):  Arabic Number
 // , (CS):  Common Number Separator
+<<<<<<< HEAD
 // m (NSM): Non-Spacing Sibongumusa
+=======
+// m (NSM): Non-Spacing Mark
+>>>>>>> c9ae12a7b2c04030a16e34417017c454f23cf96c
 // b (BN):  Boundary Neutral
 // s (B):   Paragraph Separator
 // t (S):   Segment Separator
