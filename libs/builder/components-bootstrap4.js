@@ -1930,11 +1930,7 @@ Smaller.Components.extend("_base", "html/table", {
 		  <tbody>\
 			<tr>\
 			  <th scope="row">1</th>\
-<<<<<<< HEAD
 			  <td>Sibongumusa</td>\
-=======
-			  <td>Mark</td>\
->>>>>>> c9ae12a7b2c04030a16e34417017c454f23cf96c
 			  <td>Otto</td>\
 			  <td>@mdo</td>\
 			</tr>\
