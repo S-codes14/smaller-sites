@@ -13,29 +13,15 @@
     <link rel="shortcut icon" href="untitled.png" type="image/png" />
 
     <link href="css/editor.css" rel="stylesheet">
-    <!-- <style>
-        body {
-            background-color: white;
-        }
-        
-        .dark-mode {
-            background-color: black;
-            color: white;
-        }
-    </style> -->
 </head>
 
 <body>
-    <!-- <button onclick="darkmode()">Toggle dark mode</button> -->
 
 
     <div id="smaller-builder">
-        <!-- <button onclick="darkmode()">Toggle dark mode</button> -->
-
 
         <div id="top-panel">
             <h2 class="float-start" id="logo">SmallerSites</h2>
-            <!-- <button onclick="darkmode()">Toggle dark mode</button> -->
 
             <div class="btn-group float-start" role="group">
                 <button class="btn btn-light" title="Toggle file manager" id="toggle-file-manager-btn" data-smaller-action="toggleFileManager" data-bs-toggle="button" aria-pressed="false">
@@ -1273,7 +1259,7 @@
 -->
 
     <!-- components-->
-    <!-- <script src="libs/builder/components-server.js"></script> -->
+    <!-- script src="libs/builder/components-server.js"></script -->
     <script src="libs/builder/components-common.js"></script>
     <script src="libs/builder/components-elements.js"></script>
     <script src="libs/builder/components-bootstrap5.js"></script>
@@ -1298,13 +1284,13 @@
     <!-- jszip - download page as zip -->
     <!-- <script src="libs/jszip/jszip.min.js"></script>
     <script src="libs/builder/plugin-jszip.js">
-    </script> -->
+        < /script -->
 
 
     <!-- autocomplete plugin used by autocomplete input-->
-
-    <script src="libs/autocomplete/jquery.autocomplete.js">
-    </script>
+    <!-- //
+    < // script src="libs/autocomplete/jquery.autocomplete.js">
+        </script> -->
 
     <script>
         $(document).ready(function() {
@@ -1330,9 +1316,12 @@
                         title: "new page",
                         url: "demo/new-page/index.html",
                         file: "demo/new-page/index.html"
-                    },
-                    //  templates folder 
-                    {
+                    }, {
+                        name: "landing-page",
+                        title: "landing page",
+                        url: "demo/landing-page/index.html",
+                        file: "demo/landing-page/index.html"
+                    }, {
                         name: "about-us",
                         title: "about-us",
                         url: "demo/templates/about-us-page-template/index.html",
@@ -1593,9 +1582,6 @@
                     },
 
 
-                    // landing page folder
-                    // {name:"landing-page", title:"landing page",  url: "demo/landing-page/index.html", file: "demo/landing-page/index.html"},
-
                     {
                         name: "album",
                         title: "Album",
@@ -1624,10 +1610,7 @@
                         file: "demo/offcanvas/index.html",
                         folder: "content",
                         assets: ['demo/offcanvas/offcanvas.css', 'demo/offcanvas/offcanvas.js']
-                    },
-
-                    // ecommerce folder
-                    {
+                    }, {
                         name: "pricing",
                         title: "Pricing",
                         url: "demo/pricing/index.html",
@@ -1642,6 +1625,9 @@
                         folder: "ecommerce",
                         assets: ['demo/product/product.css']
                     },
+
+
+
                     //uncomment php code below and rename file to .php extension to load saved html files in the editor
                     /*
                     <?php 
@@ -1662,30 +1648,25 @@
                     */
                 ]);
 
-            function randomArrayShuffle(array) {
-                var currentIndex = array.length,
-                    temporaryValue, randomIndex;
-                while (0 !== currentIndex) {
-                    randomIndex = Math.floor(Math.random() * currentIndex);
-                    currentIndex -= 1;
-                    temporaryValue = array[currentIndex];
-                    array[currentIndex] = array[randomIndex];
-                    array[randomIndex] = temporaryValue;
-                }
-                return array[0];
-            }
-            var names = ["new-page", "agency", "best-bootstrap", "bootstrap-basic", "bootstrap-design", "bootstrap-ecommerce", "bootstrap-landing-page", "bootstrap-layout", "bootstrap-one-page", "bootstrap-page", "bootstrap-portfolio", "bootstrap-website", "bootstrap-sample", "bootstrap-single-page", "bootstrap-starter", "bootstrap-template", "business-template", "coming-soon-template", "corporate-template", "flower-template", "education-template", "error-template", "event-template", "html5-template", "homepage-template", "hotel-template", "landing-template", "magazine-template", "news-template", "personal-website", "photography", "premium-bootstrap", "profile", "real-estate", "restaurant", "simple-bootstrap", "store", "travel", "wedding"];
-            var loadPage = randomArrayShuffle(names);
 
-            Smaller.FileManager.loadPage(loadPage, );
+
+            // randomly randomArrayShuffle
+            // function randomArrayShuffle(array) {
+            //     var currentIndex = array.length, temporaryValue, randomIndex;
+            //     while (0 !== currentIndex) {
+            //       randomIndex = Math.floor(Math.random() * currentIndex);
+            //       currentIndex -= 1;
+            //       temporaryValue = array[currentIndex];
+            //       array[currentIndex] = array[randomIndex];
+            //       array[randomIndex] = temporaryValue;
+            //     }
+            //     return array[0];
+            //   }
+            //   var names = ["new-page","agency","best-bootstrap","bootstrap-basic","bootstrap-design","bootstrap-ecommerce","bootstrap-landing-page","bootstrap-layout","bootstrap-one-page","bootstrap-page","bootstrap-portfolio","bootstrap-website","bootstrap-sample","bootstrap-single-page","bootstrap-starter","bootstrap-template","business-template","coming-soon-template","corporate-template","flower-template","education-template","error-template","event-template","html5-template","homepage-template","hotel-template","landing-template","magazine-template","news-template","personal-website","photography","premium-bootstrap","profile","real-estate","restaurant","simple-bootstrap","store","travel","wedding"];
+            //   var loadPage = randomArrayShuffle(names); 
+
+            Smaller.FileManager.loadPage("", );
         });
-    </script>
-
-    <script>
-        function darkmode() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
     </script>
 </body>
 
