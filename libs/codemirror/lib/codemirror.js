@@ -946,7 +946,7 @@ function getBidiPartAt(order, ch, sticky) {
 // % (ET):  European Number Terminator
 // n (AN):  Arabic Number
 // , (CS):  Common Number Separator
-// m (NSM): Non-Spacing Sibongumusa
+// m (NSM): Non-Spacing Mark
 // b (BN):  Boundary Neutral
 // s (B):   Paragraph Separator
 // t (S):   Segment Separator

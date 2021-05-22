@@ -1,5 +1,5 @@
 /*
-Copyright 2021 Sibongumusa Lungelo
+Copyright 2017 Ziadin Givan
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -123,6 +123,9 @@ Smaller.Undo = {
 			break;
 			case 'characterData':
 			  mutation.target.innerHTML = undo ? mutation.oldValue : mutation.newValue;
+			  break;
+			case 'style':
+			  $("#smallerjs-styles", window.FrameDocument).html( undo ? mutation.oldValue : mutation.newValue );
 			  break;
 			case 'attributes':
 			  value = undo ? mutation.oldValue : mutation.newValue;

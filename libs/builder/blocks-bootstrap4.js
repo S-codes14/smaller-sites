@@ -1,5 +1,5 @@
 /*
-Copyright 2021 Sibongumusa Lungelo
+Copyright 2017 Ziadin Givan
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -54,7 +54,7 @@ Smaller.Blocks.add("bootstrap4/product-card", {
         <div class="card rounded">
             <div class="card-image">
                 <span class="card-notify-badge">Fully-Loaded</span>
-                <span class="card-notify-year">2021</span>
+                <span class="card-notify-year">2017</span>
                 <img class="img-fluid" src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=CAC80HOC021B121001.jpg&width=440&height=262" alt="Alternate Text" />
             </div>
             <div class="card-image-overlay m-auto">

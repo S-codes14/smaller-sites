@@ -1,5 +1,5 @@
 /*
-Copyright 2021 Sibongumusa Lungelo
+Copyright 2017 Ziadin Givan
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -1930,7 +1930,7 @@ Smaller.Components.extend("_base", "html/table", {
 		  <tbody>\
 			<tr>\
 			  <th scope="row">1</th>\
-			  <td>Sibongumusa</td>\
+			  <td>Mark</td>\
 			  <td>Otto</td>\
 			  <td>@mdo</td>\
 			</tr>\

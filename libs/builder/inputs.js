@@ -1,5 +1,5 @@
 /*
-Copyright 2021 Sibongumusa Lungelo
+Copyright 2017 Ziadin Givan
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -126,6 +126,24 @@ var SelectInput = $.extend({}, Input, {
 	
 	init: function(data) {
 		return this.render("select", data);
+	},
+	
+  }
+);
+
+var IconSelectInput = $.extend({}, Input, {
+	
+    events: [
+        ["change", "onChange", "select"],
+	 ],
+	
+
+	setValue: function(value) {
+		$('select', this.element).val(value);
+	},
+	
+	init: function(data) {
+		return this.render("icon-select", data);
 	},
 	
   }
@@ -607,5 +625,17 @@ var TagsInput = $.extend({}, Input, {
 		
 		return this.element;
 	}
+  }
+);
+
+
+var NoticeInput = $.extend({}, Input, {
+
+    events: [
+	 ],
+	
+	init: function(data) {
+		return this.render("noticeinput", data);
+	},
   }
 );

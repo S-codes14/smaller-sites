@@ -1,7 +1,7 @@
 /**
 *    Json key/value autocomplete for jQuery 
 *    Provides a transparent way to have key/value autocomplete
-*    Copyright (C) 2008 Sibongumusa Lungelo
+*    Copyright (C) 2008 Ziadin Givan
 *
 *    This program is free software: you can redistribute it and/or modify
 *    it under the terms of the GNU Lesser General Public License as published by

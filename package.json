@@ -1,19 +1,20 @@
 {
-  "name": "smallerSites",
-  "description": "Drag and drop website designer for web developers and designers",
+  "name": "smaller-sites",
+  "description": "Drag and drop website builder javascript library",
   "version": "0.0.1",
   "author": "Sibongumusa Lungelo",
   "license": "Apache-2.0",
+  "homepage": "http://smallerjs.netlify.app",
   "main": "libs/builder/builder.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/S-codes14/smaller.git"
+    "url": "https://github.com/S-codes14/smaller-sites.git"
   },
   "dependencies": {
     "jquery": "^3.0"
   },
   "keywords": [
-    "smallerSites",
+    "smallerjs",
     "drag-drop",
     "drag&drop",
     "drag",
@@ -23,8 +24,7 @@
     "template",
     "editor",
     "site",
-    "builder",
-    "designer"
+    "builder"
   ],
   "scripts": {
     "gulp": "gulp",

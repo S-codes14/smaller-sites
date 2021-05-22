@@ -1,10 +1,15 @@
-# SmallerSites
+# Smaller-sites
 
 
-## Drag and drop website designer javascript library.
+## Drag and drop website builder javascript library.
+
+
 Built with jQuery and Bootstrap 4.
 
-Using [Startbootstrap new page](https://startbootstrap.com/template-overviews/new-page/) for demo page and Bootstrap 4 components.
+
+
+Using [Startbootstrap landing page](https://startbootstrap.com/template-overviews/landing-page/) for demo page and Bootstrap 4 components.
+
 
 ### Features
 
@@ -58,7 +63,13 @@ For editor html and components/input javascript templates check editor.html
 
 For css changes edit scss/editor.scss and scss/_builder.scss
 
+## Documentation
 
+For documentation check the [wiki](https://github.com/givanz/SmallerJs/wiki)
+
+## Support
+
+If you like the project you can support it with a [PayPal donation](https://paypal.me/scodes14) 
 
 ## License
 
