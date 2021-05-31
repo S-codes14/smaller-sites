@@ -72,6 +72,20 @@ For documentation check the [wiki](https://github.com/givanz/SmallerJs/wiki)
 
 If you like the project you can support it with a [PayPal donation](https://paypal.me/scodes14) 
 
+## Authors
+### Originally made by:
+
+👤 **Givan**
+* Github: [@givanz](https://github.com/givanz )
+
+
+### Tweaked by: 
+
+👤 **Sibongumusa Lungelo**
+
+* Twitter: [@S_codes14](https://twitter.com/S_codes14)
+* Github: [@S-codes14](https://github.com/S-codes14)
+
 ## License
 
 Apache 2.0
