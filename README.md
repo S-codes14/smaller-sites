@@ -1,9 +1,10 @@
-<img src="https://user-images.githubusercontent.com/81442054/119279026-6048d900-bc29-11eb-88e2-9b38a6869a9d.png" >
+<img src="https://user-images.githubusercontent.com/81442054/119279026-6048d900-bc29-11eb-88e2-9b38a6869a9d.png" width="250" height="250" align="center" >
+
 # Smaller-sites
 
 
 ## Drag and drop website builder javascript library.
-<img src="https://user-images.githubusercontent.com/81442054/119279083-a7cf6500-bc29-11eb-9786-7ef80f236ad9.png">
+<img src="https://user-images.githubusercontent.com/81442054/119279083-a7cf6500-bc29-11eb-9786-7ef80f236ad9.png" width="">
 
 Built with jQuery and Bootstrap 4.
 
