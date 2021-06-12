@@ -12,5 +12,5 @@ jobs:
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: 'Hope you read the issue template, but any way thank you for contributing'
-        pr-message: 'How you read the pull request template, but any way thank you for contributing'
+        issue-message: 'Hope you read the issue template, but any way thank you for contributing, We will get back to you as soon as we recieve it'
+        pr-message: 'How you read the pull request template, but any way thank you for contributing, We will get back to you as soon as we recieve it'
