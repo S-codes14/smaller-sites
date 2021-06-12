@@ -13,7 +13,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-https://github.com/givanz/SmallerJs
+https://github.com/S-codes14/smaller-sites
 */
 
 Smaller.ComponentsGroup['Widgets'] = ["widgets/googlemaps", "widgets/video", "widgets/chartjs", "widgets/facebookpage", "widgets/paypal", "widgets/instagram", "widgets/twitter"/*, "widgets/facebookcomments"*/];
@@ -328,7 +328,7 @@ Smaller.Components.extend("_base", "widgets/paypal", {
 \
 				<!-- Identify your business so that you can collect the payments. -->\
 				<input type="hidden" name="business"\
-					value="givanz@yahoo.com">\
+					value="S-codes14@yahoo.com">\
 \
 				<!-- Specify a Donate button. -->\
 				<input type="hidden" name="cmd" value="_donations">\

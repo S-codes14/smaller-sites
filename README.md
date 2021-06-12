@@ -66,7 +66,7 @@ For css changes edit scss/editor.scss and scss/_builder.scss
 
 ## Documentation
 
-For documentation check the [wiki](https://github.com/givanz/SmallerJs/wiki)
+For documentation check the [wiki](https://github.com/S-codes14/smaller-sites/wiki)
 
 ## Support
 
