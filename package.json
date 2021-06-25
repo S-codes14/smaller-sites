@@ -11,7 +11,7 @@
     "url": "https://github.com/S-codes14/smaller-sites.git"
   },
   "dependencies": {
-    "jquery": "^3.0"
+    "jquery": "^3.6"
   },
   "keywords": [
     "smallerjs",
