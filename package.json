@@ -5,7 +5,6 @@
   "author": "Sibongumusa Lungelo",
   "license": "Apache-2.0",
   "homepage": "http://smaller-sites.netlify.app",
- 
   "main": "./main.js",
   "repository": {
     "type": "git",
@@ -32,14 +31,14 @@
     "start": "electron .",
     "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "electron-packager ./ sites --all --out ~/Documents/SmallerSites/sites --version 0.30.2 --overwrite --icon=./app/img/app-icon.icns"
+    "package": "electron-packager ./ sites --all --out ~/Documents/SmallerSites/sites --version 0.30.8 --overwrite --icon=./app/img/app-icon.icns"
   },
   "devDependencies": {
+    "electron-packager": "^5.2.0",
+    "electron-prebuilt": "^0.30.8",
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.3.0",
     "gulp-format-html": "^1.2.5",
-    "gulp-sass": "^5.0.0",
-    "electron-packager": "^5.0.1",
-    "electron-prebuilt": "^0.30.3"
+    "gulp-sass": "^5.0.0"
   }
 }
