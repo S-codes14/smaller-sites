@@ -1,8 +1,8 @@
 {
   "name": "smaller-sites",
   "description": "Drag and drop website builder javascript library",
-  "version": "0.0.1",
-  "author": "Sibongumusa Lungelo",
+  "version": "1.0.0",
+  "author": "Sibongumusa Lungelo <smlmnguni14@gmail.com>",
   "license": "Apache-2.0",
   "homepage": "http://smaller-sites.netlify.app",
   "main": "./main.js",
@@ -34,12 +34,16 @@
     "start": "electron .",
     "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "electron-packager ./ smaller-sites --all --out ~/Documents/SmallerSites/sites --version 0.30.8 --overwrite --icon=./app/img/app-icon.icns"
+    "package": "electron-packager ./ smaller-sites --all --out ~/Documents/SmallerSites/sites --version 0.30.8 --overwrite --icon=./app/img/app-icon.icns",
+    "pack": "build --dir",
+    "dist": "build"
   },
   "build": {
-    "appId": "yourappid",
-    "category": "your.app.category.type",
+    "appId": "app.netlify.smaller-sites",
+    "category": "public.app-category.productivity",
+    "copyright": "©2021 Smaller Studioz",
     "dmg": {
+      "icon": "app/img/app-icon.icns",
       "contents": [
         {
           "x": 110,
@@ -60,8 +64,8 @@
       ]
     },
     "win": {
-      "target": "squirrel",
-      "icon": "build/icon.ico"
+      "target": "NSIS",
+      "icon": "app/img/app-icon.ico"
     }
   },
   "devDependencies": {
