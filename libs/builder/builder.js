@@ -1589,10 +1589,11 @@ Smaller.Builder = {
 		//return self.documentFrame.attr("srcdoc", html);
 	},
 	
-	saveAjax: function(fileName, startTemplateUrl, callback, saveUrl)
+	saveAjax: function(fileName, startTemplateUrl, folder, callback, saveUrl)
 	{
 		var data = {};
 		data["file"] = (fileName && fileName != "") ? fileName : Smaller.FileManager.getCurrentFileName();
+		data["folder"] = (folder && folder != "") ? folder : Smaller.FileManager.getCurrentFolder();
 		data["startTemplateUrl"] = startTemplateUrl;
 		if (!startTemplateUrl || startTemplateUrl == null)
 		{
@@ -1713,9 +1714,10 @@ Smaller.Gui = {
 	saveAjax : function () {
 		
 		var saveUrl = this.dataset.smallerUrl;
-		var url = Smaller.FileManager.getPageData('file');
+		var url = Smaller.FileManager.getCurrentUrl()
+		// var url = Smaller.FileManager.getPageData('file');
 		
-		return Smaller.Builder.saveAjax(url, null, function (data) {
+		return Smaller.Builder.saveAjax(url, null, null, function (data) {
 			var messageModal = new bootstrap.Modal(document.getElementById('message-modal'), {
 			  keyboard: false
 			});
@@ -1858,7 +1860,7 @@ Smaller.Gui = {
 			Smaller.FileManager.addPage(data.name, data);
 			e.preventDefault();
 			
-			return Smaller.Builder.saveAjax(data.file, data.startTemplateUrl, function (data) {
+			return Smaller.Builder.saveAjax(data.file, data.startTemplateUrl, data.folder, function (data) {
 					Smaller.FileManager.loadPage(name);
 					Smaller.FileManager.scrollBottom();
 					newPageModal.modal("hide");
@@ -2539,6 +2541,15 @@ Smaller.FileManager = {
         }
 	},
 	
+	getCurrentFolder: function() {
+		if (this.currentPage)
+        {
+            var folder = this.pages[this.currentPage]['folder'];
+            folder = folder ? folder + '/': ''; 
+            return folder;
+        }
+	},
+
 	reloadCurrentPage: function() {
 		if (this.currentPage)
 		return this.loadPage(this.currentPage);
