@@ -34,7 +34,35 @@
     "start": "electron .",
     "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "electron-packager ./ sites --all --out ~/Documents/SmallerSites/sites --version 0.30.8 --overwrite --icon=./app/img/app-icon.icns"
+    "package": "electron-packager ./ smaller-sites --all --out ~/Documents/SmallerSites/sites --version 0.30.8 --overwrite --icon=./app/img/app-icon.icns"
+  },
+  "build": {
+    "appId": "yourappid",
+    "category": "your.app.category.type",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "build/icon.ico"
+    }
   },
   "devDependencies": {
     "electron-packager": "^5.2.0",
