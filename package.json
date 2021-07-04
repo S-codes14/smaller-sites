@@ -35,7 +35,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "electron-packager ./ smaller-sites --all --out ~/Documents/SmallerSites/sites --version 0.30.8 --overwrite --icon=./app/img/app-icon.icns",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=app/img/app-icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . smaller-sites --overwrite --asar=true --platform=win32 --arch=ia32 --icon=app/img/app-icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Smaller sites\"",
+    "package-linux": "electron-packager . smaller-sites --overwrite --asar=true --platform=linux --arch=x64 --icon=smaller.png --prune=true --out=release-builds"
   },
   "build": {
     "appId": "app.netlify.smaller-sites",
