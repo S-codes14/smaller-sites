@@ -14,7 +14,8 @@
     "jquery": "^3.6",
     "nconf": "^0.7.2",
     "path": "^0.12.7",
-    "url": "^0.11.0"
+    "url": "^0.11.0",
+    "electron-squirrel-startup": "^1.0.0"
   },
   "keywords": [
     "smallerjs",
@@ -30,47 +31,44 @@
     "builder"
   ],
   "scripts": {
-    "start": "electron .",
-    "gulp": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "electron-packager ./ smaller-sites --all --out ~/Documents/SmallerSites/sites --version 0.30.8 --overwrite --icon=./app/img/app-icon.icns",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder",
-    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=app/img/app-icon.icns --prune=true --out=release-builds",
-    "package-win": "electron-packager . smaller-sites --overwrite --asar=true --platform=win32 --arch=ia32 --icon=app/img/app-icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Smaller sites\"",
-    "package-linux": "electron-packager . smaller-sites --overwrite --asar=true --platform=linux --arch=x64 --icon=smaller.png --prune=true --out=release-builds"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
-  "build": {
-    "appId": "app.netlify.smaller-sites",
-    "category": "public.app-category.productivity",
-    "copyright": "©2021 Smaller Studioz",
-    "dmg": {
-      "icon": "app/img/app-icon.icns",
-      "contents": [
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
         {
-          "x": 110,
-          "y": 150
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "smaller_sites"
+          }
         },
         {
-          "x": 240,
-          "y": 150,
-          "type": "link",
-          "path": "/Applications"
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
         }
       ]
-    },
-    "linux": {
-      "target": [
-        "AppImage",
-        "deb"
-      ]
-    },
-    "win": {
-      "target": "NSIS",
-      "icon": "app/img/app-icon.ico"
     }
   },
   "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.50",
+    "@electron-forge/maker-deb": "^6.0.0-beta.50",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.50",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.50",
+    "@electron-forge/maker-zip": "^6.0.0-beta.50",
+    "devtron": "^1.4.0",
     "electron": "^13.1.5",
     "electron-builder": "^22.11.7",
     "electron-packager": "^5.2.0",
