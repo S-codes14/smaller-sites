@@ -1,1 +1,7 @@
+# to generate the node_modules run 'npm i'
 node_modules
+# to generate the out folder run 'npm run make'
+/out
+
+/app/deb/
+/app/rpm/
