@@ -71,7 +71,7 @@
     "devtron": "^1.4.0",
     "electron": "^13.1.5",
     "electron-builder": "^22.11.7",
-    "electron-packager": "^5.2.0",
+    "electron-packager": "^15.2.0",
     "electron-prebuilt": "^0.30.8",
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.3.0",
