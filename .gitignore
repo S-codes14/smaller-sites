@@ -2,3 +2,6 @@
 node_modules
 # to generate the out folder run 'npm run make'
 /out
+
+/app/deb/
+/app/rpm/
