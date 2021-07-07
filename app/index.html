@@ -11,7 +11,7 @@
     <base href="">
     <title>SmallerSites-The go to place for web dev</title>
     
-    <link href="css/editor.css" rel="stylesheet">
+    <link href="../css/editor.css" rel="stylesheet">
   </head>
 <body>
 
@@ -22,15 +22,15 @@
 					
 					<div class="btn-group float-start" role="group">
 					  <button class="btn btn-light" title="Toggle file manager" id="toggle-file-manager-btn" data-smaller-action="toggleFileManager" data-bs-toggle="button" aria-pressed="false">
-						  <img src="libs/builder/icons/file-manager-layout.svg" width="20px" height="20px">
+						  <img src="../libs/builder/icons/file-manager-layout.svg" width="20px" height="20px">
 					  </button>
 
 					  <button class="btn btn-light" title="Toggle left column" id="toggle-left-column-btn" data-smaller-action="toggleLeftColumn" data-bs-toggle="button" aria-pressed="false">
-						  <img src="libs/builder/icons/left-column-layout.svg" width="20px" height="20px">
+						  <img src="../libs/builder/icons/left-column-layout.svg" width="20px" height="20px">
 					  </button>
 					  
 					  <button class="btn btn-light" title="Toggle right column" id="toggle-right-column-btn" data-smaller-action="toggleRightColumn" data-bs-toggle="button" aria-pressed="false">
-						  <img src="libs/builder/icons/right-column-layout.svg" width="20px" height="20px">
+						  <img src="../libs/builder/icons/right-column-layout.svg" width="20px" height="20px">
 					  </button>
 					</div>
 					
@@ -707,7 +707,7 @@
 						<div class="breadcrumb-navigator float-start px-2" style="--bs-breadcrumb-divider: '>';">
 							
 						  <ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="#">body</a></li>
+							<li class="breadcrumb-ite++++++m"><a href="#">body</a></li>
 							<li class="breadcrumb-item"><a href="#">section</a></li>
 							<li class="breadcrumb-item"><a href="#">img</a></li>
 						  </ol>			
@@ -723,22 +723,22 @@
 								<div id="toggleEditorJsExecute" class="form-check mt-1" style="display:none">
 									<input type="checkbox" class="form-check-input" id="runjs" name="runjs" data-smaller-action="toggleEditorJsExecute">
 									<label class="form-check-label" for="runjs"><small>Run javascript code on edit</small></label>
-								</div>
-						</div>
-							
+								</div>+++++++++
+						</div>+++++++++++++++++
+							+
 						<div id="smaller-code-editor">
-							<textarea class="form-control"></textarea>
+							<++++++++++++++++++++++textarea class="form-control"></+textarea>
 						<div>
 
 				</div>
 			</div>
-		</div>
+		</div>+++++++++++++++++++++++++++++++++++++++
 
 
 <!-- templates -->
 
-<script id="smaller-input-textinput" type="text/html">
-	
+<script id="smaller-input-textinput" type="text/htm+l">
+	+
 	<div>
 		<input name="{%=key%}" type="text" class="form-control"/>
 	</div>
@@ -1223,14 +1223,14 @@
 		
 		<div class="tree">
 			<ol >
-				<li data-component="Products" class="file">							
+				<!-- <li data-component="Products" class="file">							
 					<label for="idNaN" style="background-image:url(http://demo.givan.ro/js/smallerjs/icons/products.svg)"><span>Products</span></label>							
 					<input type="checkbox" id="idNaN">
 				</li>
 				<li data-component="Posts" class="file">							
 					<label for="idNaN" style="background-image:url(http://demo.givan.ro/js/smallerjs/icons/posts.svg)"><span>Posts</span></label>							
 					<input type="checkbox" id="idNaN">
-				</li>
+				</li> -->
 			</ol>
 		</div>
 	</div>
@@ -1307,9 +1307,9 @@
 			<div class="col-sm-9 input">
 				<div>    
 					<select class="form-select" name="startTemplateUrl">        
-						<option value="new-page-blank-template.html">Blank Template</option>        
-						<option value="demo/narrow-jumbotron/index.html">Narrow jumbotron</option>       
-						<option value="demo/album/index.html">Album</option>       
+						<option value="../new-page-blank-template.html">Blank Template</option>        
+						<option value="../demo/narrow-jumbotron/index.html">Narrow jumbotron</option>       
+						<option value="../demo/album/index.html">Album</option>       
 					</select>    
 				</div>
 			</div>     
@@ -1367,19 +1367,19 @@
 </div>
 	
 <!-- jquery-->
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.hotkeys.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.hotkeys.js"></script>
 
 <!-- bootstrap-->
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 
 <!-- builder code-->
-<script src="libs/builder/builder.js"></script>	
+<script src="../libs/builder/builder.js"></script>	
 <!-- undo manager-->
-<script src="libs/builder/undo.js"></script>	
+<script src="../libs/builder/undo.js"></script>	
 <!-- inputs-->
-<script src="libs/builder/inputs.js"></script>	
+<script src="../libs/builder/inputs.js"></script>	
 
 <!-- bootstrap colorpicker //uncomment bellow scripts to enable -->
 <!--
@@ -1390,27 +1390,27 @@
 
 <!-- components-->
 <!-- script src="libs/builder/components-server.js"></script -->	
-<script src="libs/builder/components-common.js"></script>	
+<script src="../libs/builder/components-common.js"></script>	
 <!-- script src="libs/builder/components-elements.js"></script -->	
-<script src="libs/builder/components-bootstrap5.js"></script>	
-<script src="libs/builder/components-widgets.js"></script>	
-<script src="libs/builder/components-html.js"></script>	
+<script src="../libs/builder/components-bootstrap5.js"></script>	
+<script src="../libs/builder/components-widgets.js"></script>	
+<script src="../libs/builder/components-html.js"></script>	
 
 <!-- sections-->
-<script src="libs/builder/sections-bootstrap4.js"></script>	
+<script src="../libs/builder/sections-bootstrap4.js"></script>	
 
 <!-- blocks-->
-<script src="libs/builder/blocks-bootstrap4.js"></script>	
+<script src="../libs/builder/blocks-bootstrap4.js"></script>	
 
 <!-- plugins -->
 
 <!-- code mirror - code editor syntax highlight -->
-<link href="libs/codemirror/lib/codemirror.css" rel="stylesheet"/>
-<link href="libs/codemirror/theme/material.css" rel="stylesheet"/>
-<script src="libs/codemirror/lib/codemirror.js"></script>
-<script src="libs/codemirror/lib/xml.js"></script>
-<script src="libs/codemirror/lib/formatting.js"></script>
-<script src="libs/builder/plugin-codemirror.js"></script>	
+<link href="../libs/codemirror/lib/codemirror.css" rel="stylesheet"/>
+<link href="../libs/codemirror/theme/material.css" rel="stylesheet"/>
+<script src="../libs/codemirror/lib/codemirror.js"></script>
+<script src="../libs/codemirror/lib/xml.js"></script>
+<script src="../libs/codemirror/lib/formatting.js"></script>
+<script src="../libs/builder/plugin-codemirror.js"></script>	
 
 <!-- 
 Tinymce plugin
