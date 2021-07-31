@@ -11,7 +11,7 @@
 		min-width: $builder-right-panel-width + 15;
 		font-size:12px;
 		font-weight:500;
-		color:#555;
+		color:rgb(211, 208, 208);
 
 		li 
 		{ 
@@ -19,12 +19,12 @@
 			margin-left: -15px;
 			margin-bottom: 0.3rem;
 			list-style: none;
-			color:#555;
+			color:rgb(230, 223, 223);
 			overflow:hidden;
 			
 			&:hover
 			{
-				color:#007bff;
+				color:#0b66c7;
 			}
 			
 			&.active
