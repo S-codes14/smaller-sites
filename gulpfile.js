@@ -17,7 +17,9 @@ limitations under the License.
 
 const gulp = require('gulp');
 const fileinclude = require('gulp-file-include');
-const sass = require('gulp-sass');
+// gulp-sass 5 does not have a default Sass compiler; please set one yourself.
+// Both the `sass` and `node-sass` packages are permitted.
+const sass = require('gulp-sass')(require('sass'));
 const formatHtml = require('gulp-format-html');
 const through2 = require( 'through2' );    
 

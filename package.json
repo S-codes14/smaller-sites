@@ -11,11 +11,12 @@
     "url": "https://github.com/S-codes14/smaller-sites.git"
   },
   "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
     "jquery": "^3.6",
     "nconf": "^0.7.2",
     "path": "^0.12.7",
-    "url": "^0.11.0",
-    "electron-squirrel-startup": "^1.0.0"
+    "sass": "^1.37.0",
+    "url": "^0.11.0"
   },
   "keywords": [
     "smallerjs",
@@ -66,7 +67,7 @@
     "@electron-forge/cli": "^6.0.0-beta.50",
     "@electron-forge/maker-deb": "^6.0.0-beta.50",
     "@electron-forge/maker-rpm": "^6.0.0-beta.57",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.50",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.59",
     "@electron-forge/maker-zip": "^6.0.0-beta.50",
     "devtron": "^1.4.0",
     "electron": "^13.1.5",
