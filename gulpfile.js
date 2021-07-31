@@ -17,7 +17,7 @@ limitations under the License.
 
 const gulp = require('gulp');
 const fileinclude = require('gulp-file-include');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const formatHtml = require('gulp-format-html');
 const through2 = require( 'through2' );    
 
