@@ -13,7 +13,7 @@
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
     "jquery": "^3.6",
-    "nconf": "^0.7.2",
+    "nconf": "^0.11.3",
     "path": "^0.12.7",
     "sass": "^1.37.0",
     "url": "^0.11.0"
