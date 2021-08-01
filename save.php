@@ -14,7 +14,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-https://github.com/S-codes14/smaller-sites
 */
 
 define('MAX_FILE_LIMIT', 1024 * 1024 * 2);//2 Megabytes max html file size
@@ -36,8 +35,11 @@ if (isset($_POST['startTemplateUrl']) && !empty($_POST['startTemplateUrl']))
 	$html = substr($_POST['html'], 0, MAX_FILE_LIMIT);
 }
 
+$folder = $_POST['folder'];
 $file = sanitizeFileName($_POST['file']);
-
+if(!is_dir( __DIR__ . "/" . $folder )){
+	mkdir( __DIR__ . "/" . $folder ,  0777, true);
+}
 if (file_put_contents($file, $html)) {
 	echo "File saved $file";
 } else {

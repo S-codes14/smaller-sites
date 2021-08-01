@@ -7,7 +7,7 @@
 <img src="https://user-images.githubusercontent.com/81442054/119279083-a7cf6500-bc29-11eb-9786-7ef80f236ad9.png" width="">
 
 Built with jQuery and Bootstrap 4.
-Using [Startbootstrap landing page](https://startbootstrap.com/template-overviews/landing-page/) for demo page and Bootstrap 4 components.
+Using [Startbootstrap landing page](https://startbootstrap.com/template-overviews/landing-page/) and/or [mobirise](https://mobirise.com) for demo page templates and Bootstrap 4 components.
 
 
 ### Features
@@ -45,7 +45,9 @@ For documentation check the [wiki](https://github.com/S-codes14/smaller-sites/wi
 
 If you like the project you can support it with a [PayPal donation](https://paypal.me/scodes14) 
 
-## Authors
+## Credits & Authors
+### Templates
+ * Mobirise @ https://mobirise.com
 ### Originally made by:
 
 👤 **Givan**

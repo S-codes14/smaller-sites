@@ -166,18 +166,6 @@ $(document).ready(function()
 		file: "demo/templates/education-template/index.html",
 		folder: "Mobrise-templates"
 	}, {
-		name: "error-template",
-		title: "error-template",
-		url: "demo/templates/error-template/index.html",
-		file: "demo/templates/error-template/index.html",
-		folder: "Mobrise-templates"
-	}, {
-		name: "event-template",
-		title: "event-template",
-		url: "demo/templates/event-template/index.html",
-		file: "demo/templates/event-template/index.html",
-		folder: "Mobrise-templates"
-	}, {
 		name: "html5-template",
 		title: "html5-template",
 		url: "demo/templates/html5/index.html",
@@ -255,13 +243,7 @@ $(document).ready(function()
 		url: "demo/templates/simple-bootstrap-template",
 		file: "demo/templates/simple-bootstrap-template/index.html",
 		folder: "Mobrise-templates"
-	}, {
-		name: "store",
-		title: "store",
-		url: "demo/templates/store-template",
-		file: "demo/templates/store-template/index.html",
-		folder: "Mobrise-templates"
-	}, {
+	},{
 		name: "travel",
 		title: "travel",
 		url: "demo/templates/travel-template",
@@ -287,7 +269,6 @@ $(document).ready(function()
 		{name:"blog", title:"Blog",  url: "demo/blog/index.html", file: "demo/blog/index.html", folder:"content", assets: ['demo/blog/blog.css']},
 		{name:"carousel", title:"Carousel",  url: "demo/carousel/index.html",  file: "demo/carousel/index.html", folder:"content", assets: ['demo/carousel/carousel.css']},
 		{name:"offcanvas", title:"Offcanvas",  url: "demo/offcanvas/index.html", file: "demo/offcanvas/index.html", folder:"content", assets: ['demo/offcanvas/offcanvas.css','demo/offcanvas/offcanvas.js']},
-		
 		//uncomment php code below and rename file to .php extension to load saved html files in the editor
 		/*
 		<?php 

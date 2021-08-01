@@ -1,17 +1,22 @@
 {
   "name": "smaller-sites",
   "description": "Drag and drop website builder javascript library",
-  "version": "0.0.1",
-  "author": "Sibongumusa Lungelo",
+  "version": "1.0.0",
+  "author": "Sibongumusa Lungelo <smlmnguni14@gmail.com>",
   "license": "Apache-2.0",
-  "homepage": "http://smallerjs.netlify.app",
-  "main": "libs/builder/builder.js",
+  "homepage": "http://smaller-sites.netlify.app",
+  "main": "./main.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/S-codes14/smaller-sites.git"
   },
   "dependencies": {
-    "jquery": "^3.6"
+    "electron-squirrel-startup": "^1.0.0",
+    "jquery": "^3.6",
+    "nconf": "^0.7.2",
+    "path": "^0.12.7",
+    "sass": "^1.37.0",
+    "url": "^0.11.0"
   },
   "keywords": [
     "smallerjs",
@@ -27,13 +32,51 @@
     "builder"
   ],
   "scripts": {
-    "gulp": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ./main.js",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "smaller_sites"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
   },
   "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.50",
+    "@electron-forge/maker-deb": "^6.0.0-beta.50",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.57",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.59",
+    "@electron-forge/maker-zip": "^6.0.0-beta.50",
+    "devtron": "^1.4.0",
+    "electron": "^13.1.5",
+    "electron-builder": "^22.11.7",
+    "electron-packager": "^5.2.0",
+    "electron-prebuilt": "^0.30.8",
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.3.0",
     "gulp-format-html": "^1.2.5",
-    "gulp-sass": "^4.1.1"
+    "gulp-sass": "^5.0.0"
   }
 }
