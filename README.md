@@ -4,8 +4,7 @@
 
 
 ## Drag and drop website builder 
-<img src="https://user-images.githubusercontent.com/81442054/119279083-a7cf6500-bc29-11eb-9786-7ef80f236ad9.png" width="">
-
+![Screenshot 2021-08-02 at 01-55-26 SmallerSites-The go to place for web dev](https://user-images.githubusercontent.com/81442054/127789135-1b3f0795-2694-429f-bf3c-3622703790e6.png)
 Built with jQuery and Bootstrap 4.
 Using [Startbootstrap landing page](https://startbootstrap.com/template-overviews/landing-page/) and/or [mobirise](https://mobirise.com) for demo page templates and Bootstrap 4 components.
 
