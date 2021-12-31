@@ -77,6 +77,6 @@
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.3.0",
     "gulp-format-html": "^1.2.5",
-    "gulp-sass": "^5.0.0"
+    "gulp-sass": "^5.1.0"
   }
 }
